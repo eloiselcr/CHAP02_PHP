@@ -14,6 +14,18 @@
     --> 
 </head>
 <body>
+
+    <?php
+
+    $tab = array (
+        "Nom" => "BIENDINE",
+        "Prenom" => "Francine",
+        "MDP" => "louloute",
+    );
+
+    echo "Nom = [".$tab["Nom"]."] <br>; Prenom = [".$tab["Prenom"]."] <br>; MDP = [".$tab["MDP"]."]<br>";
     
+    ?> 
+
 </body>
 </html>
