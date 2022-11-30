@@ -8,13 +8,15 @@
         <!-- 
         ----------- EXO 2.1 - LES TABLEAUX PHP A INDICE NUMERIQUE -----------
         
-       A) Créer un tableau php qui contient 5 chiffres.
-            Afficher les 5 chiffres à la suite grace au parcours du tableau dans une boucle for.
-       B) Essayer d’afficher ses 5 chiffres dans un tableau HTML que génère PHP
+       A) Creer un tableau php qui contient 5 chiffres.
+            Afficher les 5 chiffres a la suite grace au parcours du tableau dans une boucle for.
+       B) Essayer d afficher ses 5 chiffres dans un tableau HTML que genere PHP
     --> 
 </head>
 <body>
-<?php
+    
+    <?php
+
     $array=[
         1=>8,
         2=>10,
@@ -22,12 +24,15 @@
         4=>9,
         5=>21,
     ];
+
     echo '<table border="1"><tr>';
+    
     for ($i=1; $i<=5; $i++)
     {
         echo "<th>".$array[$i]."</th>";
     }
     echo "</tr></table>";
+
     ?>
     
 </body>

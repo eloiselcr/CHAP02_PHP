@@ -8,7 +8,7 @@
         <!-- 
         ----------- EXO 2.2 - LES TABLEAUX PHP A INDICE NOMME -----------
         
-       Créer un tableau php qui contient un nom un prenom et un mot de passe et qui a pour indice de colonne: 
+       Creer un tableau php qui contient un nom un prenom et un mot de passe et qui a pour indice de colonne: 
        Nom, Prenom, MDP.
        Afficher ce tableau avec la commande echo Tableau[‘Nom’] ect.
     --> 
