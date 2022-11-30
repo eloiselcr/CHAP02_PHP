@@ -23,6 +23,7 @@
         ['nom' => 'Carre', 'prenom' => 'Zoe', 'MDP' => 'neige80'],
     ];
 
+    /*
     echo '<table border="1"><tr>';
     for ($i=1; $i<=5; $i++)
     {
@@ -30,6 +31,8 @@
     }
     echo "</tr></table>";
 
+    */ 
+    
     ?>
     
 </body>
