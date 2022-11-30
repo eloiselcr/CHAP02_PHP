@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href='exo4_operateurs.css'>
     <title>Exo 4 - Les opérateurs PHP</title>
-            <!-- 
+        <!-- 
         ----------- EXO 4 - LES OPERATEURS PHP -----------
         
     Creer un petit programme php qui resout une equation du second degre de type
