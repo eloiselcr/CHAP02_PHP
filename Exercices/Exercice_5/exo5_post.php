@@ -9,33 +9,29 @@
             <!-- 
         ----------- EXO 5 - LES FORMULAIRES ET LA METHODE POST -----------
         
-    Creer un petit programme php qui resout une equation du second degre de type
-    Ax2 + Bx + C = 0
-    Comme on ne maitrise pas pour le moment les entrees utilisateur les variables A, B et C
-    seront rentre manuellement dans le programme.
+    Creer un petit formulaire avec une zone de text et un bouton. Lorsque vous cliquer sur le
+    bouton la page doit afficher ce que vous avez saisie en rouge. Utilisez $_POST[‘champ1’].
     -->
 </head>
 <body>
 
-<form method="post">
+<form action = "exo5_post.php" method="post">
     Texte... <input type ="text" name="champ1">
     <input type="submit" name="zioummmm">
 </form>
 
     <?php
-    
-        if (empty($_POST['champ1']))
+
+        if (empty($_POST['champ1'])) // si rien n'a été saisi
         {
             echo "<p>Aucun texte n'a été saisi :(</p>";
         }
         else
         {
-            echo "<p id='return'>".$_POST['champ1']."</p>";
+            echo "<p id='return'>".$_POST['champ1']."</p>"; // sinon retourne le texte en rouge 
         }
-
-
+        
     ?>
 
-    
 </body>
 </html>
