@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,7 +12,7 @@
         
     Creer un petit formulaire avec une zone de texte et un bouton. Lorsque vous cliquer sur
     le bouton la page doit afficher ce que vous avez saisie et l’enregistre dans une variable de
-    session $_SESSIONS[]. Le but est que si vous actualisez votre page la variable est
+    session $_SESSION[]. Le but est que si vous actualisez votre page la variable est
     memorisee et le site affiche toujours la valeur saisie.
     -->
 </head>
@@ -21,19 +23,20 @@
     <input type="submit" name="zioummmm">
 </form>
 
-    <?php
 
+    <?php
+        
         if (empty($_POST['champ1'])) // si rien n'a été saisi
         {
             echo "<p>Aucun texte n'a été saisi :(</p>";
         }
         else
         {
-            if (empty($_SESSIONS['save']))
+            if (empty($_SESSION['save']))
             {
-                $_SESSIONS['save'] = $_POST['champ1'];
+                $_SESSION['save'] = $_POST['champ1'];
                 echo "<p id='return'>".$_POST['champ1']."</p>"; // sinon retourne le texte
-                echo "<p>La variable enregistrée est donc : ".$_SESSIONS['save']."</p>";
+                echo "<p>La variable enregistrée est donc : ".$_SESSION['save']."</p>";
                 
             }
             else 
@@ -42,7 +45,6 @@
             }
         }
 
-        
     ?>
     
 </body>

@@ -40,7 +40,7 @@
         echo "<p>R1, qui est égal à ".$r1." et R2, qui est égal à ".$r2.".</p>";
     }
 
-    if($Delta == 0) // Si Delta égal a 0
+    if($Delta == 0) // Si Delta est égal a 0
     {
         echo "<p>L'équation est <b>égale à 0</b>, donc elle admet <b>1 solution</b> réelle : </p>";
         $r0 = round(-($NombreAleatoireB) / 2 * ($NombreAleatoireA));
